@@ -1,6 +1,6 @@
 {
   "generator-ui5-ts-app": {
-    "application": "wcintegration",
+    "application": "firebaseui5",
     "namespace": "com.hse",
     "framework": "OpenUI5",
     "frameworkVersion": "1.108.0",
@@ -9,7 +9,7 @@
     "tstypes": "@openui5/ts-types-esm",
     "tstypesVersion": "1.108.0",
     "appId": "firebaseui5",
-    "appURI": "com/hse/wcintegration",
+    "appURI": "firebaseui5",
     "setupCompleted": true
   }
 }
