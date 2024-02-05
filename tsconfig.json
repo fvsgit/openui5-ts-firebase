@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"target": "es2015",
+		"module": "es2015",
+		"skipLibCheck": true,
+		"preserveConstEnums": true,
+		"sourceMap": false,
+		"allowJs": true,
+		"strict": true,
+		"strictNullChecks": false,
+		"strictPropertyInitialization": false,
+		"rootDir": "./",
+		"outDir": "./dist",
+		"baseUrl": "./",
+		"moduleResolution": "Node",
+		"typeRoots": ["./node_modules/@types", "./node_modules/@openui5/ts-types-esm"],
+		"paths": {
+			"com/hse/firebaseui5/*": ["./webapp/*"],
+			"firebaseui5/lib/*": ["./lib/*"]
+		}
+	},
+	"include": ["./webapp/**/*", "./lib/**/*"]
+}
