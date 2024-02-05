@@ -1,7 +1,7 @@
 {
-  "name": "wcintegration",
+  "name": "firebaseui5",
   "version": "1.0.0",
-  "description": "UI5 Application: wcintegration",
+  "description": "UI5 Application: firebaseui5",
   "author": "Christian Pfisterer",
   "license": "Apache-2.0",
   "scripts": {

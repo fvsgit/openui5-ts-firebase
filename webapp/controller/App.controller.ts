@@ -11,7 +11,7 @@ import NotificationListItem from "sap/m/NotificationListItem";
 import CustomData from "sap/ui/core/CustomData";
 import Link from "sap/m/Link";
 import MessageItem from "sap/m/MessageItem";
-// import { initializeApp, getAuth } from "firebaseui5/lib/firebase";
+import { initializeApp, getAuth } from "firebaseui5/lib/firebase";
 
 // shortcut for sap.m.PlacementType
 var PlacementType = mobileLibrary.PlacementType;
@@ -41,21 +41,21 @@ export default class App extends BaseController {
 		Device.media.attachHandler(this._handleWindowResize, this);
 		this.getRouter().attachRouteMatched(this.onRouteChange.bind(this));
 
-		// const firebaseConfig = {
-		// 	apiKey: "AIzaSyCy1d13pYC79sOgUZnn4-sJ5VM9QY6TjqM",
-		// 	authDomain: "github-followers-281ea.firebaseapp.com",
-		// 	projectId: "github-followers-281ea",
-		// 	storageBucket: "github-followers-281ea.appspot.com",
-		// 	messagingSenderId: "576057379323",
-		// 	appId: "1:576057379323:web:4fb59feea548cdefa1235e",
-		// };
+		const firebaseConfig = {
+			apiKey: "AIzaSyCy1d13pYC79sOgUZnn4-sJ5VM9QY6TjqM",
+			authDomain: "github-followers-281ea.firebaseapp.com",
+			projectId: "github-followers-281ea",
+			storageBucket: "github-followers-281ea.appspot.com",
+			messagingSenderId: "576057379323",
+			appId: "1:576057379323:web:4fb59feea548cdefa1235e",
+		};
 
-		// // Initialize Firebase
-		// const app = initializeApp(firebaseConfig);
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
 
-		// // // // Initialize Firebase Authentication and get a reference to the service
-		// const auth = getAuth(app);
-		// console.log(auth);
+		//Initialize Firebase Authentication and get a reference to the service
+		const auth = getAuth(app);
+		console.log(auth);
 	}
 
 	public onExit(): void {
